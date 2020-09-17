@@ -1,0 +1,511 @@
+     /*Header Section*/
+     
+     @import "_variables.scss";
+     header {
+         background-image: url(/images/img2.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         opacity: 0.85;
+         width: 100%;
+         min-height: 100vh;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         overflow: hidden;
+     }
+     
+     .nav {
+         width: 100%;
+         overflow: hidden;
+         z-index: 1;
+         position: absolute;
+     }
+     
+     .nav ul {
+         display: flex;
+         width: 100%;
+         flex-direction: row;
+         justify-content: flex-end;
+         font-size: 1.3em;
+     }
+     
+     .nav ul a {
+         padding: 2vh 2vw;
+         color: white;
+         text-decoration: none;
+     }
+     
+     .nav ul a:hover {
+         cursor: pointer;
+         color: $text-page-color;
+         background-color: rgba(23, 138, 214, 0.3);
+     }
+     
+     .burger-btn {
+         margin-top: 3vh;
+         position: fixed;
+         right: 0;
+         z-index: 1;
+         margin-right: 1vw;
+     }
+     
+     .menu {
+         min-height: 100vh;
+         display: none;
+         flex-direction: column;
+         background-color: rgba(8, 11, 12, 0.9);
+         font-size: 1.2em;
+         align-items: center;
+         list-style: none;
+     }
+     
+     .menu .dropDownMenu {
+         display: flex;
+         flex-direction: column;
+         list-style: none;
+         width: 98%;
+         text-align: center;
+         border-radius: 2em;
+         align-content: center;
+     }
+     
+     .dropDownMenu a {
+         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.20);
+     }
+     
+     .menu a {
+         justify-content: center;
+         border: 0.1em solid $text-page-color;
+         margin-bottom: 5vh;
+         background-color: white;
+         border-radius: 1em;
+         min-height: 10vh;
+         padding-top: 2.2vh;
+     }
+     
+     .menu a:hover {
+         cursor: pointer;
+     }
+     
+     .menu #close-btn {
+         margin: 4vh 3vw 2vh 0;
+         margin-bottom: 6vh;
+         z-index: 1;
+         align-self: flex-end;
+     }
+     
+     #close-btn img {
+         max-width: 80%;
+     }
+     
+     .menu #close-btn:hover {
+         cursor: pointer;
+         color: $text-page-color;
+     }
+     
+     .menu a:hover {
+         color: $text-page-color;
+         background-color: rgba(161, 161, 161, 0.315);
+     }
+     
+     .head-text {
+         display: flex;
+         text-align: center;
+         flex-direction: column;
+         position: absolute;
+         height: 100%;
+         width: 100%;
+         justify-content: center;
+     }
+     
+     #whiteSpace {
+         background-color: white;
+         width: 100%;
+         min-height: 10vh;
+     }
+     /*About Section*/
+     
+     #skillsTitle {
+         justify-content: center;
+         display: flex;
+         background-image: url(/images/laptop.png);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         color: #dbe6fa;
+         font-weight: 700;
+         min-height: 15vh;
+         align-items: center;
+         border-bottom: 0.1em solid white;
+         width: 100%;
+     }
+     
+     .info {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-evenly;
+         box-shadow: $box-shadow-style;
+         background-image: url(/images/laptop.png);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         opacity: 0.85;
+         min-height: 110vh;
+         box-shadow: $box-shadow-style
+     }
+     
+     .info p {
+         display: flex;
+         flex-direction: column;
+         max-width: 50%;
+         text-align: justify;
+         z-index: 1;
+         margin-top: -8vh;
+     }
+     
+     .info a {
+         text-decoration: none;
+         height: 1vh;
+         display: contents;
+     }
+     
+     .info article {
+         align-self: center;
+     }
+     
+     #myPhotoLarge {
+         max-width: 55vh;
+         max-height: 75vh;
+         box-shadow: $box-shadow-style;
+         z-index: 1;
+         margin-left: 5vw;
+     }
+     
+     #myPhotoLarge:hover {
+         opacity: 1;
+         -webkit-animation: flash 1.5s;
+         animation: flash 1.5s;
+     }
+     
+     @-webkit-keyframes flash {
+         0% {
+             opacity: .4;
+         }
+         100% {
+             opacity: 1;
+         }
+     }
+     
+     @keyframes flash {
+         0% {
+             opacity: .4;
+         }
+         100% {
+             opacity: 1;
+         }
+     }
+     
+     .skills-list img {
+         display: flex;
+         box-shadow: $box-shadow-style;
+         width: 100%;
+     }
+     
+     .skills-text {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         width: 100%;
+         min-height: 70vh;
+         position: relative;
+         box-shadow: $box-shadow-style;
+         background-image: url(/images/skills.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         text-align: center;
+     }
+     
+     .div1 {
+         border: 0.1em solid white;
+     }
+     
+     #ar1,
+     #ar2,
+     #ar3 {
+         width: 100%;
+     }
+     
+     #skillsTitle1 {
+         justify-content: center;
+         display: flex;
+         background-image: url(/images/skills.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         color: $text-page-color;
+         font-weight: 700;
+         min-height: 15vh;
+         align-items: center;
+         border: 0.1em solid white;
+     }
+     
+     .div1 h2 {
+         margin: 6vh 0 4vh 0
+     }
+     
+     .skills-text ul {
+         padding-left: 2vw;
+         color: black;
+         font-size: 1.5em;
+         align-self: flex-end;
+         list-style: none;
+     }
+     /*Projects Section*/
+     
+     #skillsTitle2 {
+         justify-content: center;
+         display: flex;
+         background-image: url(/images/projects.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         color: $text-page-color;
+         font-weight: 700;
+         min-height: 15vh;
+         align-items: center;
+         border-bottom: 0.1em solid white;
+     }
+     
+     .projects {
+         min-height: 100vh;
+         background-image: url(/images/projects.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+     }
+     
+     #link {
+         display: flex;
+         justify-content: center;
+         margin: auto;
+         text-decoration: none;
+         margin-top: 7vh
+     }
+     
+     #link img {
+         box-shadow: $box-shadow-style;
+         position: relative;
+         margin: 9vh 0 9vh;
+         background: rgba(182, 180, 180, 0.801)
+     }
+     
+     #link:hover img {
+         opacity: 0.8;
+         -webkit-animation: flash 2.5s;
+         animation: flash 2.5s;
+     }
+     
+     #link figcaption {
+         position: absolute;
+         visibility: hidden;
+         color: white;
+         display: block;
+         justify-content: center;
+         font-size: 3em;
+         font-weight: 900;
+         overflow: hidden;
+     }
+     
+     .mobile-images {
+         display: flex;
+         flex-wrap: wrap;
+         flex-direction: row;
+         background-image: url(/images/projects.jpg);
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         align-items: center;
+         justify-content: space-evenly;
+         min-height: 100vh;
+     }
+     
+     .mobile-images img {
+         display: flex;
+         flex-direction: row;
+         box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         max-height: 40vh;
+     }
+     
+     .mobile-images a {
+         display: flex;
+         flex-direction: column;
+         font-size: 2.5em;
+         font-weight: 900;
+         text-decoration: none;
+         position: relative;
+     }
+     
+     .mobile-images p {
+         box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+         align-items: center;
+         height: 8vh;
+     }
+     
+     #weatherTitle {
+         background-color: rgb(56, 198, 148);
+     }
+     
+     #musicTitle {
+         background-color: rgb(247, 95, 56);
+     }
+     
+     #titleCard {
+         display: flex;
+         position: absolute
+     }
+     /*Footer Section*/
+     
+     footer {
+         width: 100%;
+         display: block;
+         background-color: black;
+         box-shadow: $box-shadow-style;
+         border-top: white 0.3em solid;
+     }
+     
+     footer h2,
+     p {
+         display: flex;
+         justify-content: center;
+     }
+     
+     footer h2 {
+         margin-top: 1.5vh
+     }
+     
+     .footer-content {
+         width: 100%;
+         display: flex;
+         margin: 8vh 0 10vh;
+     }
+     
+     .Contact-Form {
+         width: 50%;
+         text-align: center;
+         z-index: 0;
+         align-items: center;
+         margin-left: 4vw;
+     }
+     
+     .Contact-Form form {
+         display: flex;
+         flex-direction: column;
+         margin-top: 2.5vh;
+         padding-top: 2vh;
+     }
+     
+     .Contact-Form input {
+         margin: 0 0 2.5vh 2vw;
+         min-height: 6vh;
+         width: 45vw;
+         align-self: center;
+         border: none;
+         background-color: rgba(46, 49, 49, 1);
+         border: 0.1em solid rgba(46, 49, 49, 1);
+     }
+     
+     .Contact-Form #messageInput {
+         min-height: 20vh;
+         max-height: 50vh;
+         max-width: 45vw;
+         min-width: 20vw;
+         background-color: rgba(46, 49, 49, 1);
+         margin-left: 3.2vw;
+         padding-top: 0.5vh;
+         border: none;
+         outline: none;
+         color: white;
+         position: relative;
+     }
+     
+     input:focus {
+         outline: none;
+     }
+     
+     .formButtons {
+         width: 40%;
+         display: flex;
+         align-self: center;
+         justify-content: center;
+         text-align: center;
+         margin-top: 3vh;
+     }
+     
+     #sendbutton,
+     #resetbutton {
+         color: white;
+         border: none;
+         border: 0.1em solid black;
+         min-height: 6vh;
+     }
+     
+     #sendbutton {
+         background-color: rgb(68, 127, 253);
+     }
+     
+     #sendbutton,
+     #resetbutton:hover {
+         cursor: pointer;
+     }
+     
+     #resetbutton {
+         background-color: rgb(189, 38, 0);
+     }
+     
+     .contactDetails {
+         display: block;
+         margin-left: 12vw;
+     }
+     
+     #contactText {
+         flex-direction: column;
+         display: flex;
+         align-items: flex-start;
+         padding: 1.5vh 0 0 4vw;
+     }
+     
+     #contactIcons {
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         padding-top: 4vh;
+     }
+     
+     .footer-logo {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 8vh 0 0 0.1vw
+     }
+     /*Loading container*/
+     
+     .loading-container {
+         width: 100%;
+         height: 100%;
+         position: fixed;
+         z-index: 1;
+         overflow: hidden;
+         opacity: 1;
+         background: rgb(24, 31, 39) url(/resources/loader.gif) no-repeat center;
+         transition: 2s ease-out;
+     }

@@ -1,0 +1,168 @@
+@media only screen and (max-width: 350px) {
+    .mobile-images img,
+    p {
+        width: 60%;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    #contactText {
+        padding-left: 6vw
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .nav ul a {
+        display: none;
+    }
+    .burger-btn {
+        display: flex;
+    }
+    .head-text h1 {
+        display: none;
+    }
+    .head-text h2 {
+        display: none;
+    }
+    .info {
+        align-content: flex-start;
+    }
+    .info p {
+        display: none
+    }
+    .mobileText {
+        display: flex;
+        justify-content: center;
+    }
+    .mobileText p {
+        display: flex;
+        margin-top: 5vh;
+    }
+    .skills-text {
+        display: none;
+    }
+    #skillsTitle {
+        border: none;
+        border-bottom: 0.1em solid white;
+    }
+    #skillsTitle1 {
+        border: none;
+        border-bottom: 0.1em solid white;
+        ;
+    }
+    .skills-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-image: url(/images/skills.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 85vh;
+        padding: 2vh 2vw 2vh 2vw;
+    }
+    #myPhotoCircle {
+        max-width: 40vw;
+        max-height: 30vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .menu {
+        visibility: hidden;
+    }
+    header {
+        display: flex
+    }
+    .nav ul a {
+        display: block;
+    }
+    .burger-btn {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .mobileText {
+        display: none
+    }
+    .skills-list {
+        display: none;
+    }
+    .head-text p {
+        display: none;
+    }
+    .head-text h1 {
+        font-size: 1em;
+    }
+    #myPhotoCircle {
+        display: none
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .head-text {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+    }
+    .info p {
+        max-width: 70%;
+    }
+    #myPhotoLarge {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .link-section {
+        display: none
+    }
+    .mobile-images {
+        display: flex
+    }
+    .Contact-Form {
+        display: none
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .contactDetails {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 -7vh;
+        align-self: center;
+    }
+    .contactDetails h3 {
+        align-self: center;
+        ;
+    }
+    #contactIcons {
+        padding-top: 9.3vh;
+    }
+    #contactText {
+        margin-left: 5vw;
+    }
+    #contactIcons {
+        margin-left: 2vw
+    }
+}
+
+@media only screen and(min-width:1023px) {
+    .mobile-images {
+        display: none
+    }
+}

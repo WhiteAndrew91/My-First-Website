@@ -1,0 +1,90 @@
+    @import "_variables.scss";
+    body {
+        font-family: Mukta, serif;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+    }
+    
+    .head-text h1 {
+        font-size: 3em;
+        color: $text-page-color;
+    }
+    
+    .head-text h2 {
+        font-size: 2em;
+        color: $text-page-color;
+    }
+    
+    .head-text p {
+        font-size: 3em;
+        color: $text-page-color;
+        font-weight: 600;
+    }
+    
+    .info p {
+        font-size: 1.2em;
+        font-weight: 400;
+        color: $text-page-color;
+    }
+    
+    .div1 h2 {
+        color: $text-page-color;
+    }
+    
+    .skills-text ul li {
+        color: $text-page-color;
+    }
+    
+    #ar2 span {
+        color: $text-page-color;
+        margin-top: 2vh;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    
+    .mobile-images p {
+        font-size: 0.8em;
+        color: white
+    }
+    
+    footer h3 {
+        color: white;
+        font-size: 1.5em;
+    }
+    
+    footer h2,
+    h3,
+    p {
+        color: white;
+    }
+    
+    #inp,
+    #messageInput {
+        font-size: 1.2em;
+        font-family: Mukta, serif;
+        color: white;
+        padding-left: 1.2vw;
+    }
+    
+    input #messageInput::placeholder {
+        color: rgb(99, 99, 99);
+        justify-self: center;
+    }
+    
+    form::placeholder {
+        color: rgb(99, 99, 99);
+    }
+    
+    #sendbutton,
+    #resetbutton {
+        font-size: 1em;
+    }
+    
+    .contactDetails h2 {
+        color: rgb(68, 127, 253);
+        font-size: 1.2em;
+    }
